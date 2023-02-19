@@ -1,0 +1,25 @@
+<div class="pop_up_width">
+  <mat-dialog-content [formGroup]="contactForm" >
+
+    <div class="form">
+
+      <div>
+        <mat-form-field>
+          <input matInput placeholder="name" formControlName="name">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <input matInput placeholder="e-mail" formControlName="email">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <button mat-flat-button>Cancel</button>
+        <button mat-raised-button color="primary" (click)="showData()">Send</button>
+      </div>
+
+    </div>
+  </mat-dialog-content>
+</div>
